@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | IP Address Tracker</title>
+
+    <link rel="stylesheet" href="./node_modules/leaflet/dist/leaflet.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+
+  <body>
+    <main>
+      <section
+        class="bg-desktopBG min-h-[35vh] bg-cover bg-no-repeat flex items-center flex-col gap-[25px] py-[40px]"
+      >
+        <h1 class="font-bold text-white text-[1.5rem] lg:text-[2rem]">
+          IP Address Tracker
+        </h1>
+        <div class="lg:w-[45%] search-bar flex">
+          <input
+            type="text"
+            id="ipSearch"
+            placeholder="Search for any IP address or domain"
+            class="w-full rounded-l-xl px-[20px] py-[10px] outline-none"
+          />
+          <button id="searchBtn" class="duration-500 hover:bg-veryDark_Gray">
+            <span></span>
+          </button>
+        </div>
+      </section>
+      <section class="relative">
+        <div class="info">
+          <div>
+            <h1>IP Address</h1>
+            <p id="ip"></p>
+          </div>
+          <div>
+            <h1>Location</h1>
+            <p id="location"></p>
+          </div>
+          <div>
+            <h1>Timezone</h1>
+            <p id="zone"></p>
+          </div>
+          <div>
+            <h1>ISP</h1>
+            <p id="ISP"></p>
+          </div>
+        </div>
+        <div id="map"></div>
+      </section>
+    </main>
+
+    <script src="./node_modules/leaflet/dist/leaflet.js"></script>
+    <script src="./assets/js/main.js"></script>
+  </body>
+</html>
